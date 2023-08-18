@@ -1,7 +1,7 @@
 
 
 def greet():
-    print("Hello World")
+    return "Hello World"
 
 def test():
-    print("Test")
+    return "Test"
