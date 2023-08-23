@@ -4,7 +4,7 @@ def greet():
     return "Hello World"
 
 def test():
-    greet()
+    print(greet())
     return "Test"
     
-test()
+print(test())
