@@ -34,3 +34,4 @@ jobs:
          terraform -v
          node -v
          npm -v
+         tsc -v
