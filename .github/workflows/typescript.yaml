@@ -22,7 +22,9 @@ jobs:
         node-version: 12
         
     - name: Install Typescript
-      run: npm install -g typescript
+      run: |
+         npm install -g typescript
+         tsc -v
         
     - uses: actions/checkout@v1
     - name: Install Terraform
@@ -34,4 +36,4 @@ jobs:
          terraform -v
          node -v
          npm -v
-         tsc -v
+         
