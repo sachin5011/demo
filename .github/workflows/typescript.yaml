@@ -22,9 +22,8 @@ jobs:
         node-version: 18
         
     - name: Install Typescript
-      run: |
-         npm install -g typescript
-         tsc -v
+      run: npm install -g typescript
+         
         
     - uses: actions/checkout@v1
     - name: Install Terraform
@@ -33,7 +32,13 @@ jobs:
           version: 1.5.6
     - name: Checks node and Terraform version
       run : |
-         terraform -v
-         node -v
-         npm -v
+        echo "Terraform Version"
+        terraform -v
+        echo "Node Version"
+        node -v
+        echo "npm Version"
+        npm -v
+        echo "Typescript Version"
+        tsc -v
+        
          
