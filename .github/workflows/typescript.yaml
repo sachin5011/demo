@@ -20,6 +20,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
+        
     - uses: actions/checkout@v1
     - name: Install Terraform
       uses: little-core-labs/install-terraform@v2.0.0
@@ -27,6 +28,7 @@ jobs:
           version: 0.13.4
     - name: Checks node and Terraform version
       run : |
+         npm install -g typescript
          terraform -v
          node -v
          npm -v
