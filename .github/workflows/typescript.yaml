@@ -1,0 +1,27 @@
+name: My_first_git_action
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install node v12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - uses: actions/checkout@v1
+    - name: Install Terraform
+      uses: little-core-labs/install-terraform@v2.0.0
+      with:
+          version: 0.13.4
