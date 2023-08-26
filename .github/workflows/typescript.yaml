@@ -41,6 +41,8 @@ jobs:
         npm -v
         echo "Typescript Version"
         tsc -v
+        echo "CDKTF Version"
+        cdktf --version
     
     - name: Creating CDKTF project
       run: |
