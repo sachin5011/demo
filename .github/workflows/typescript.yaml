@@ -3,8 +3,6 @@ name: My_first_git_action
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 permissions:
   contents: read
@@ -62,6 +60,8 @@ jobs:
         cdktf init --template=typescript --local
         pwd
         ls
-        
+        cd /home/runner/work/demo/demo/cdktf-demo/
+        ls
+
         
          
