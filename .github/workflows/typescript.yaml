@@ -67,6 +67,8 @@ jobs:
         echo "Installed Successfully"
 
     - name: Listing main.ts file
-      run: cat main.ts
+      run: |
+        cd cdktf-demo 
+        cat main.ts
 
          
