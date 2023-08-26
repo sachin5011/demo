@@ -53,12 +53,13 @@ jobs:
         mkdir cdktf-demo
         ls
         cd cdktf-demo
-        ls
         cdktf init --template=typescript --local
-        ls
+
 
     - name: Listing CDKTF Directory
       run: |
+        pwd
+        cd cdktf-demo
         ls
         
         
