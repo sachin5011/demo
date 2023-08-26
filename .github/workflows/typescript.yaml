@@ -31,21 +31,26 @@ jobs:
       with:
           version: 1.5.6
 
+    - name: Install CDKTF-CLI
+      run: npm install -g cdktf-cli
+          
+
     - name: Checks node and Terraform version
       run : |
-        echo "Terraform Version"
+        echo "=== Terraform Version ==="
         terraform -v
-        echo "Node Version"
+        echo "=== Node Version ==="
         node -v
-        echo "npm Version"
+        echo "=== npm Version ==="
         npm -v
-        echo "Typescript Version"
+        echo "=== Typescript Version ==="
         tsc -v
-        echo "CDKTF Version"
-        cdktf --version
+        echo "=== CDKTF CLI Version ==="
     
     - name: Creating CDKTF project
       run: |
         mkdir cdktf-demo
         cd cdktf-demo
         cdktf init --template=typescript --local
+
+         
