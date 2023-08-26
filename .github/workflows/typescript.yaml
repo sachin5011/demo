@@ -1,4 +1,4 @@
-name: My_first_git_action
+name: Terraform
 
 on:
   push:
@@ -46,11 +46,16 @@ jobs:
         echo "=== Typescript Version ==="
         tsc -v
         echo "=== CDKTF CLI Version ==="
+        cdktf --version
     
     - name: Creating CDKTF project
       run: |
         mkdir cdktf-demo
         cd cdktf-demo
         cdktf init --template=typescript --local
+
+    - name: Listing CDKTF Directory
+      run: |
+          ls
 
          
