@@ -66,5 +66,7 @@ jobs:
         npm install --save-dev @types/node
         echo "Installed Successfully"
 
-        
+    - name: Listing main.ts file
+      run: cat main.ts
+
          
