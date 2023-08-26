@@ -61,6 +61,7 @@ jobs:
         pwd
         cd cdktf-demo
         ls
+        pwd
         
         
          
