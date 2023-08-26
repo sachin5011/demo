@@ -1,4 +1,4 @@
-name: Terraform
+name: My_first_git_action
 
 on:
   push:
@@ -51,12 +51,15 @@ jobs:
     - name: Creating CDKTF project
       run: |
         mkdir cdktf-demo
+        ls
         cd cdktf-demo
+        ls
         cdktf init --template=typescript --local
+        ls
 
     - name: Listing CDKTF Directory
       run: |
-          ls
-          cat > main.py
-
+        ls
+        
+        
          
