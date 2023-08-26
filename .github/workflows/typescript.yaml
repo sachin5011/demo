@@ -60,5 +60,11 @@ jobs:
         cd /home/runner/work/demo/demo/cdktf-demo
         ls
 
+    - name: Installing Project dependencies
+      run : |
+        npm install @cdktf/provider-databricks --force
+        npm install --save-dev @types/node
+        echo "Installed Successfully"
+
         
          
