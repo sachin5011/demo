@@ -69,6 +69,6 @@ jobs:
     - name: Listing main.ts file
       run: |
         cd cdktf-demo 
-        cat main.ts
+        cat >> main.ts
 
          
