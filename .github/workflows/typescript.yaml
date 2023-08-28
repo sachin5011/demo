@@ -63,10 +63,19 @@ jobs:
 
     - name: Installing Project dependencies
       run : |
-        npm install @cdktf/provider-databricks --force
         npm install --save-dev @types/node
         npm install @cdktf/provider-databricks
         echo "Installed Successfully"
+
+    - name: Creating CDKTF project
+      run : |
+        cdktf init --template=typescript \
+          --project-name=learn-terraform-cdktf-applications \
+          --project-description="Learn how to develop CDKTF applications" \
+          --providers="kubernetes@~>2.14" \
+          --local
+  
+          
 
     - name: Ls node_modules
       run: |
