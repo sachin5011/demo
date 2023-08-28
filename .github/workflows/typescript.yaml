@@ -71,8 +71,6 @@ jobs:
 
     - name: Reading Data from test.txt
       run: |
+        pwd
+        ls
         head test.txt
-        
-
-
-         
