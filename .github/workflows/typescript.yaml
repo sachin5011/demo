@@ -58,6 +58,7 @@ jobs:
       run: |
         pwd
         cd /home/runner/work/demo/demo/cdktf-demo
+        pwd
         ls
 
     - name: Installing Project dependencies
@@ -66,8 +67,8 @@ jobs:
         npm install --save-dev @types/node
         echo "Installed Successfully"
 
-    - name: Listing main.ts file
-      run: |
-        cd cdktf-demo
-        pwd
+    # - name: Listing main.ts file
+    #   run: |
+    #     cd cdktf-demo
+    #     pwd
         
