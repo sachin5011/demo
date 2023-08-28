@@ -69,8 +69,13 @@ jobs:
         npm install @cdktf/provider-databricks
         echo "Installed Successfully"
 
-    - name: Reading Data from test.txt
+    - name: Ls node_modules
       run: |
-        pwd
+        cd node_modules
         ls
-        head test.txt
+
+    - name: Ls cdktf-demo
+      run: |
+          cd cdktf-demo
+          ls
+        
