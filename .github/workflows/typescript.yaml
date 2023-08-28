@@ -65,6 +65,7 @@ jobs:
       run : |
         npm install @cdktf/provider-databricks --force
         npm install --save-dev @types/node
+        npm install @cdktf/provider-databricks
         echo "Installed Successfully"
 
     # - name: Listing main.ts file
