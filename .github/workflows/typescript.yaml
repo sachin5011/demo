@@ -58,6 +58,7 @@ jobs:
       run: |
         pwd
         cd /home/runner/work/demo/demo/cdktf-demo
+        cat "hello world" >> test.txt
         pwd
         ls
 
@@ -73,3 +74,6 @@ jobs:
     #     cd cdktf-demo
     #     pwd
         
+
+
+         
