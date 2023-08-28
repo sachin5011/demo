@@ -49,16 +49,15 @@ jobs:
     - name: Creating CDKTF project
       run: |
         mkdir cdktf-demo
-        ls
         cd cdktf-demo
         cdktf init --template=typescript --local
+        ls
 
 
     - name: Listing CDKTF Directory
       run: |
         pwd
         cd /home/runner/work/demo/demo/cdktf-demo
-        echo "hello world" | cat >> test.txt
         pwd
         ls
 
@@ -79,3 +78,9 @@ jobs:
           cd cdktf-demo
           ls
         
+# cdktf-demo
+      # node_modules
+      # package-lock.json
+      # package.json
+
+         
